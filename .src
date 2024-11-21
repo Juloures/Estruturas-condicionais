@@ -1,0 +1,31 @@
+opcao1 = '1. Verificar maioridade'
+opcao2 = '2. Classificar faixa etária'
+opcao3 = '3. Sair'
+
+print(opcao1)
+print(opcao2)
+print(opcao3)
+
+escolha = int(input('Escolha uma opção (1, 2, 3): '))
+
+if escolha == 1:
+    idade = int(input('Informe sua idade: '))
+    if idade >= 18:
+        print('Você é maior de idade.')
+    else:
+        print('Você é menor de idade.')
+
+elif escolha == 2:
+    idade = int(input('Informe sua idade: '))
+
+    if idade < 13:
+        print('Criança.')
+    elif 13 <= idade < 18:
+        print('Adolescente.')
+    elif 18 <= idade < 65:
+        print('Adulto.')
+    else:
+        print('Idoso.')
+
+else:
+    print('Programa encerrado.')
